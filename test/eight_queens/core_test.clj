@@ -3,5 +3,9 @@
             [eight-queens.core :refer :all]))
 
 (deftest a-test
+  (is (= 2 (n-queens 4)))
+  (is (= 10 (n-queens 5)))
+  (is (= 4 (n-queens 6)))
+  (is (= 40 (n-queens 7)))
   (is (= 92 (eight-queens)))
-  (is (= 724 (n-queens 10))))
+  (is (= 352 (n-queens 9))))
